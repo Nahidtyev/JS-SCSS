@@ -1,0 +1,53 @@
+#services{
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    @include Flexible($justify:center,$items:center,$direction:column);
+    text-align: center;
+    .heading{
+        @extend %defaultHeadings;
+        p{
+            width: 760px;
+        }
+    }
+    .srv_block{
+        width: 100%;
+        @include Flexible($wrap : wrap,$justify:center);
+            @media (max-width: 900px) {
+                @include Flexible($gap:10px);
+              }
+              @media (max-width: 650px) {
+                width: 30%;
+                @include Flexible();
+                gap: 50%;
+              }
+          .srv{
+            
+            width: calc(100%/4);
+            @include Flexible($justify:center,$items:center,$direction:column);
+            p{
+                position: relative;
+                width: 255px;
+                font-size: 21px;
+                font-family: $default_font_family;
+                font-weight: 600;
+                line-height: 35px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                text-align: left;
+                margin-right: 0;
+                a{
+                    position: absolute;
+                    bottom: 23%;
+                    right: -1%;
+                    border-radius: 50%;
+                    padding: 0 8px;
+                    background-color: rgb(235, 173, 206);
+                    i{
+                        color: #ED017F;
+                    }
+                }
+            }
+          }
+    }
+}

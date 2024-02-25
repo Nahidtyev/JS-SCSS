@@ -1,0 +1,27 @@
+@use "../../partials/varaible" as *;
+@use"../../partials/mixin" as *;
+@use "../../partials/extend" as *;
+.container{
+    margin-top: 20px;
+    ul{
+        border: 2px solid rgb(231, 231, 231);
+        font-family: $default_font_family;
+        font-size: 14px;
+        max-width: 262px;
+        margin-right: 0;
+        padding: 20px 40px;
+        @media (max-width:1200px) {
+            display: none;
+        }
+        li{
+            position: relative;
+            line-height: 20px;
+            cursor: pointer;
+            i{
+                position: absolute;
+                top: 6%;
+                left: -15%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+%BG_ImageExtened {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $white-primary;
+}
+
+%defaulSizeChekc {
+  font-family: $default_font_family;
+  background-color: $white-primary;;
+  font-size: $defult_font_size;
+  font-weight: $default_font_weignth;
+}
+
+%defaultHeadings{
+  margin-bottom: 40px;
+  text-align: center;
+  h1{
+      font-size: 36px;
+      font-family: $default_font_family;
+      font-weight: 700;
+      line-height: 43px;
+  }
+  p{
+      margin: 0 auto;
+      margin-top: 20px;
+      color: #676767;
+      width: 660px;
+      font-size: 16px;
+      font-family: $default_font_family;
+      line-height: 22px;
+  }
+}

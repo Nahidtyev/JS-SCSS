@@ -1,0 +1,33 @@
+#news{
+    width: 100%;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    text-align: center;
+    @include Flexible($direction:column,$wrap:wrap);
+    color: #343434;
+    .heading{
+        @extend %defaultHeadings;
+        p{
+            width: 28%;
+            margin-bottom: 34px;
+        }
+        input{
+            width: 343px;
+            padding: 12px 15px;
+            border: 1px solid var(--black-20, #CCC);
+            border-radius: $default_border_radius;
+            @extend %defaulSizeChekc;
+        }
+        button{
+            background-color: #ED017F;
+            color: $white-primary;
+            border-radius: $default_border_radius;
+            border: none;
+            font-size: 12px;
+            line-height: 20px;
+            padding: 13px 24px;
+            margin-left: 11px;
+            letter-spacing: 2px;
+        }
+    }
+}

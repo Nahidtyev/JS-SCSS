@@ -1,0 +1,28 @@
+#partners{
+    margin-bottom: 40px;
+    width: 100%;
+    @include Flexible($direction:column,$justify:center,$wrap:wrap);
+    text-align: center;
+    h1{
+        @extend %defaulSizeChekc;
+        margin-bottom: 88px;
+        letter-spacing: 2.1px;
+        font-size: 23px
+    }
+    .partner_img{
+        @include Flexible($wrap:wrap,$justify:space-around);
+        @media (max-width: 400px) {
+            @include Flexible($direction:column);
+          }
+        img{
+            @media (max-width: 650px) {
+                display: none;
+              }
+        }
+        img:nth-child(3){
+            @media (max-width: 900px) {
+                display: none;
+              }
+        }
+    }
+}
